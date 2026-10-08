@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3fd93ddbb9.js" crossorigin="anonymous"></script>
+    <title>Witness The World</title>
+    <style>
+        .welcome-img{
+            width: 100%;
+            height: 450px;
+            color: rgb(248, 245, 245);
+            background-image: url(assets/Images/welcome2.jpg);
+            background-size: cover;
+        }
+        .my-btn{
+            position: absolute;
+            top: 370px;
+            left: 70px;
+            width: 250px;
+            font-size: 18px;        
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            background-color: rgba(255, 1, 73, 0.493);
+        }
+        .nt-1{
+            font-size: 50px;
+            line-height: 45px;
+        }
+
+        .nt-2{
+            margin-left: 10px;
+            line-height: 25px;
+            font-size: 25px;
+        }
+        .nt-3{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .my-btn:hover{
+            border-bottom: 2px solid;
+            border-right: 3px solid;
+            background-color: rgba(120, 5, 5, 0.582);
+        }
+        .jounery-start{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .jounery-start-head{
+            align-self: flex-start;
+            font-size: 50px;
+        }
+        .jounery-start-card{
+            width: 80%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            box-shadow: 17px 20px 24px 0px rgba(162,158,158,0.75);;       
+        }
+        .my-img-cont{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            
+        }
+        .my-n-img{
+            width: 100%;
+            height: 100%;
+        }
+        .h2{
+            text-align: justify;
+        }
+        .li-items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 50px;
+        }
+        ul{
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .my-icon1{
+            color: rgb(10, 117, 51);
+        }
+        .my-icon2{
+            color: rgb(8, 20, 112);
+        }
+        .my-icon3{
+            color: rgb(177, 128, 35);
+        }
+        .my-icon4{
+            color: rgb(222, 83, 83);
+        }
+
+        .select{
+            background-color: black;
+            margin-top: 30px;
+        }
+        em{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .cards{
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .choose-card{
+            margin-bottom: 10px;
+            width: 95%;
+            height: 150px;
+            border: 1px solid;
+            border-radius: 15px;
+            background-color: rgb(218, 218, 218);
+        }
+        .reas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        .choose-my-icon1{
+            color: green;
+        }
+        .choose-my-icon2{
+            color: rgb(255, 168, 28);
+        }
+        .choose-my-icon3{
+            color: rgb(197, 39, 11);
+        }
+        .choose-my-icon4{
+            color: rgb(11, 95, 197);
+        }
+        .choose-my-icon5{
+            color: rgb(20, 128, 99);
+        }
+        .choose-my-icon6{
+            color: rgb(128, 18, 108);
+        }
+        .card-text{
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        .featured-dest{
+            width: 100%;
+            
+        }
+        .featured-cards{
+            width: 100%;
+            padding: 50px;
+        }
+        .feat-card{
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+            padding: 20px;
+            background-image: url(assets/Images/flower.png);
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+        strong{
+            font-size: 40px;
+            
+        }
+
+
+
+        @media (min-width: 768px){
+            .my-btn{
+            font-size: 18px;        
+            padding: 22px;
+            }
+            .nt-2{
+            margin-left: 20px;
+            line-height: 30px;
+            font-size: 25px;
+            }
+            .nt-3{
+            font-size: 35px;
+            margin-top: 25px;
+            }
+
+            .jounery-start-card{
+                margin-top: 10px;
+                display: flex;
+                width: 90%;
+                flex-direction: row;
+                
+            }
+            .my-img-cont{
+                width: 400px;
+            }
+            .my-txt-cont{
+                width: 60%;
+            }
+            .li-items{
+            line-height: 70px;
+            }
+
+            .cards{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            .choose-card{
+                width: 49%;
+                height: 240px;
+            }
+            .reas{
+                font-size: 30px;
+            }
+            .choose-head{
+                font-size: 35px;
+            }
+            .card-text{
+                font-size: 25px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="welcome-img">
+            <h1 class="nt-1">Where Your Next Adventure Begins</h1>
+            <h2 class="nt-2">Explore new places, experience different cultures, and create memories that last a lifetime.</h2>
+            <h2 class="nt-2">Personalized journeys designed around your interests, your pace, and your perfect getaway.</h2>
+            <h3 class="nt-3">Your world is waiting.</h3>
+            <button class="my-btn">Get Your Free Plan</button>
+        </div>
+
+        <div class="jounery-start">
+            <h1 class="jounery-start-head">Your Journey Starts Here!</h1>
+            <div class="jounery-start-card">
+                <div class="my-img-cont">
+                    <img class="my-n-img" src="assets/Images/tips.jpg" alt="">
+                </div>
+                <div class="my-txt-cont"> 
+                    <h2 class="h2">Discover breathtaking destinations and unforgettable experiences around the world.</h2>
+                    <ul>
+                        <li class="li-items">
+                            <i class="fa-solid fa-earth-asia my-icon1"></i>
+                            <p>50+ Destinations</p>
+                        </li>
+                        <li class="li-items">
+                            <i class="fa-solid fa-plane my-icon2"></i>
+                            <p>customized Trips</p>
+                        </li>
+                        <li class="li-items">
+                            <i class="fa-solid fa-hotel my-icon3"></i>
+                            <p>Handpicked Stays</p>
+                        </li>
+                        <li class="li-items">
+                            <i class="fa-solid fa-circle-info my-icon4"></i>
+                            <p>24/7 Support</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="featured-dest">
+            <h1>Featured Destinations</h1>
+            <div class="featured-cards">
+                <div class="feat-card">
+                    <strong>Thailand</strong>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="select">
+            <h1 style="font-size: 50px; text-align: center; color: white;">Why Choose Us?</h1>
+            <h2 style="text-align: center; color: rgb(120, 120, 120);"><em>More than a trip, we create experiences worth remembering.</em></h2>
+            <h2 style="text-align: center; color: rgb(120, 120, 120);"><em>From carefully chosen destinations to personalized experiences, we make every journey special.</em></h2>
+            <div class="cards">
+                
+                <div class="choose-card">
+                    <div class="reas">
+                        <i class="fa-solid fa-earth-asia choose-my-icon1"></i>
+                        <h3 class="choose-head">Handpicked Destinations<h3>
+                    </div>
+                    <p class="card-text">Discover carefully selected destinations and unforgettable experiences.</p>
+                </div>
+                <div class="choose-card">
+                    <div class="reas" style="display: flex;">
+                        <i class="fa-solid fa-sack-dollar choose-my-icon2"></i>
+                        <h3 class="choose-head">Best Value</h3>
+                    </div>
+                    <p class="card-text">Enjoy thoughtfully planned trips at prices that fit your budget.</p>
+                </div>
+                <div class="choose-card">
+                    <div class="reas" style="display: flex;">
+                        <i class="fa-solid fa-hand-holding-heart choose-my-icon3"></i>
+                        <h3 class="choose-head">Trusted Support</h3>
+                    </div>
+                    <p class="card-text">Our team is here to assist you before and during your journey.</p>
+                </div>
+                <div class="choose-card">
+                    <div class="reas" style="display: flex;">
+                        <i class="fa-solid fa-atom choose-my-icon4"></i>
+                        <h3 class="choose-head">Tailored Experiences</h3>
+                    </div>
+                    <p class="card-text">Choose trips based on your interests, travel style, and schedule.</p>
+                </div>
+                <div class="choose-card">
+                    <div class="reas" style="display: flex;">
+                        <i class="fa-solid fa-shield-heart choose-my-icon5"></i>
+                        <h3 class="choose-head">Safe & Reliable</h3>
+                    </div>
+                    <p class="card-text">Travel with confidence through trusted partners and services.</p>
+                </div>
+                <div class="choose-card">
+                    <div class="reas" style="display: flex;">
+                        <i class="fa-solid fa-icons choose-my-icon6"></i>
+                        <h3 class="choose-head">Memorable Journeys</h3>
+                    </div>
+                    <p class="card-text">We focus on creating experiences you'll remember long after your trip.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

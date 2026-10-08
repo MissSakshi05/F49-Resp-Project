@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Destinations</title>
+    <style>
+        .trend-dest{
+            border: 1px solid;
+            width: 100%;
+        }
+        .dest-box{
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .trend-dest-head{
+            font-size: 30px;
+            font-family: monospace;
+        }
+        .t-dest-card{
+            width: 300px;
+            border-radius: 400px;
+            height: 600px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+        }
+        .t-dest-head{
+            position: relative;
+            top: 35px;
+            font-size: 50px;
+        }
+        .vietnam{
+            color: rgb(8, 34, 119);
+            font-family: sans-serif;
+        }
+        .dubai{
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .europe{
+            color: white;
+        }
+        .japan{
+            color: rgb(77, 9, 9);
+        }
+  
+
+
+        @media (min-width: 768px){
+
+            .trend-dest-head{
+                font-size: 50px;
+            }
+            .dest-box{
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+                justify-content: space-between;
+            }
+            .t-dest-card{
+                width: 18%;
+                height: 500px;
+            }
+            .t-dest-head{
+                font-size: 30px;
+            }
+            
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="d1">
+        <div class="trend-dest">
+            <h1 class="trend-dest-head">Trending International Destinations</h1>
+            <div class="dest-box">
+                <div class="t-dest-card" style="background-image: url(assets/Images/vietnam.jpg);">
+                    <h2 class="t-dest-head vietnam">Vietnam</h2>
+                </div>
+                <div class="t-dest-card" style="background-image: url(assets/Images/dubai.jpg);">
+                    <h2 class="t-dest-head dubai">Dubai</h2>
+                </div>
+                <div class="t-dest-card" style="background-image: url(assets/Images/europe.jpg);">
+                    <h2 class="t-dest-head europe">Europe</h2>
+                </div>
+                <div class="t-dest-card" style="background-image: url(assets/Images/austrilia.jpg);">
+                    <h2 class="t-dest-head austrilia">Austrilia</h2>
+                </div>
+                <div class="t-dest-card" style="background-image: url(assets/Images/Japan.jpg);">
+                    <h2 class="t-dest-head japan">Japan</h2>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
